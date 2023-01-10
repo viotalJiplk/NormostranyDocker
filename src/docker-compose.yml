@@ -1,0 +1,9 @@
+version: "2.2"
+
+services:
+  normostrany:
+    build: ./
+    restart: $restart
+    container_name: normostrany-dev
+    ports:
+      - "$Port:80"

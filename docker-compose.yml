@@ -2,8 +2,8 @@ version: "2.2"
 
 services:
   normostrany:
-    build: ./
-    restart: $restart
+    image: viotal/normostrany:latest
+    restart: always
     container_name: normostrany
     ports:
-      - "$Port:80"
+      - "8080:80"
