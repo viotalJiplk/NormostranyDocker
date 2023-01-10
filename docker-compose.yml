@@ -1,0 +1,9 @@
+version: "2.2"
+
+services:
+  gtt-frontend:
+    build: ./
+    restart: $restart
+    container_name: normostrany
+    ports:
+      - "$Port:8000"
